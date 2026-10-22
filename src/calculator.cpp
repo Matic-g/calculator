@@ -18,3 +18,4 @@ double squareRoot(double a) {
     if (a < 0) throw std::invalid_argument("Koren negativnega stevila");
     return std::sqrt(a);
 }
+double absolute(double a) { return std::fabs(a); }
