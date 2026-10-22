@@ -18,4 +18,15 @@ double squareRoot(double a) {
     if (a < 0) throw std::invalid_argument("Koren negativnega stevila");
     return std::sqrt(a);
 }
+<<<<<<< HEAD
 double absolute(double a) { return std::fabs(a); }
+=======
+double absolute(double a) { return std::fabs(a); }
+long long factorial(int n) {
+    if (n < 0) throw std::invalid_argument("Negativno stevilo");
+    long long r = 1;
+    for (int i = 2; i <= n; ++i) r *= i;
+    return r;
+}
+double maximum(double a, double b) { return a > b ? a : b; }
+>>>>>>> 4f291eb (Dodana funkcija maximum)
