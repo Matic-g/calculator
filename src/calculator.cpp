@@ -14,3 +14,7 @@ int modul(int a, int b) {
     if (b == 0) throw std::invalid_argument("Deljenje z 0");
     return a % b;
 }
+double squareRoot(double a) {
+    if (a < 0) throw std::invalid_argument("Koren negativnega stevila");
+    return std::sqrt(a);
+}

@@ -10,5 +10,6 @@ int main() {
     bool thrown = false;
     try { divide(1, 0); } catch (const std::invalid_argument&) { thrown = true; }
     assert(thrown);
+    assert(squareRoot(9) == 3);
     return 0;
 }
